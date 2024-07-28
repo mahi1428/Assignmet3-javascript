@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <div class="input-container">
+      <!-- Input field for new tasks -->
+      <input class="todo-input" placeholder="Add a new task...">
+      <button class="add-button">
+        <!-- Icon for add button -->
+        <i class="fa fa-plus-circle"></i>
+      </button>
+    </div>
+    <div class="filters">
+      <!-- Filter buttons -->
+      <div class="filter active" data-filter="all">All</div>
+      <div class="filter" data-filter="completed">Completed</div>
+      <div class="filter" data-filter="pending">Pending</div>
+    </div>
+    <div class="todos-container">
+      <!-- List for displaying tasks -->
+      <ul class="todos"></ul>
+      <!-- Image shown when no tasks are present -->
+      <img class="empty-image" src="Img/empty.png">
+    </div>
+    <!-- Button to delete all tasks -->
+    <button class="delete-all">Delete All</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
